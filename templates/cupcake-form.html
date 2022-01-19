@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Cupcakes</title>
+</head>
+<body>
+    <h1>Cupcakes</h1>
+    <ul>
+
+    </ul>
+    <br>
+    <h2>Add a cupcake</h2>
+    <form action="/api/cupcakes">
+        <label for="flavor">Flavor</label>
+        <input type="text" name="flavor" id="flavor">
+        <br>
+        <label for="size">Size</label>
+        <input type="text" name="size" id="size">
+        <br>
+        <label for="rating">Rating</label>
+        <input type="float" name="rating" id="rating">
+        <br>
+        <label for="image">Image URL</label>
+        <input type="text" name="image" id="image">
+        <br>
+        <button type="submit" class="add-cupcake">Add Cupcake</button>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/static/cupcakes.js"></script>
+</body>
+</html>
